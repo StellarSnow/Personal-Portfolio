@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornflowerblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-photo {
+  border-radius: 20px;
+}
+
+.menu {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100vw;
+  padding: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.menu li {
+  margin-bottom: 0.25em;
+}
+
+.menu a {
+  color: white;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+main p {
+  font-size: 1.2em;
+  padding: 0 0.25em;
+}
+
+@media only screen and (min-width: 750px) {
+  .menu {
+    background-color: blue;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .menu li {
+    margin-right: 5vw;
+  }
+}
