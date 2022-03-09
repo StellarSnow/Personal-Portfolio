@@ -51,6 +51,38 @@ main p {
   padding: 0 0.25em;
 }
 
+p.contact-paragraph {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+form.contact-dane {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+  width: 90vw;
+}
+
+form.contact-dane label {
+  margin-bottom: 0.25em;
+}
+
+form.contact-dane input,
+form.contact-dane textarea {
+  margin-bottom: 1em;
+}
+
+.send-to-dane {
+  background-color: blue;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: 250px;
+  width: 50vw;
+  align-self: center;
+}
+
 @media only screen and (min-width: 750px) {
   .menu {
     background-color: blue;
@@ -63,5 +95,9 @@ main p {
 
   .menu li {
     margin-right: 5vw;
+  }
+
+  form.contact-dane {
+    width: 50vw;
   }
 }
