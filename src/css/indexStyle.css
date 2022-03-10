@@ -1,9 +1,13 @@
-* {
+.index-page-body {
   background-color: rgba(15, 15, 105);
-  box-sizing: border-box;
 }
 
-.homepage-article {
+.index-page-h1 {
+  text-align: center;
+  color: white;
+}
+
+.index-page-article {
   background-color: blue;
   border: 2px solid grey;
   border-radius: 4px;
@@ -15,21 +19,16 @@
   width: 300px;
 }
 
-main section a,
-main section a:visited,
-main section article p {
+.index-page-main section a,
+.index-page-main section a:visited,
+.index-page-main section article p {
   background-color: blue;
   color: white;
   font-size: 1.75em;
   text-decoration: none;
 }
 
-header h1 {
-  text-align: center;
-  color: white;
-}
-
-main {
+.index-page-main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
