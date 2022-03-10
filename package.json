@@ -4,11 +4,16 @@
   "description": "Dane Dwarka Portfolio",
   "scripts": {
     "build:distDir": "mkdir dist dist\\css dist\\images dist\\js dist\\pages",
+    "build:index-css": "cleancss src/css/indexStyle.css -o dist/css/indexStyle.css",
+    "build:pages-css": "cleancss src/css/style.css -o dist/css/style.css",
     "build:copy-pages": "cp src/index.html dist && cp src/pages/*.html dist/pages"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StellarSnow/Personal-Portfolio.git"
   },
-  "author": "Dane Dwarka"  
+  "author": "Dane Dwarka",
+  "devDependencies": {
+    "clean-css-cli": "^5.5.2"
+  }
 }
