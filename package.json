@@ -7,6 +7,7 @@
     "build:index-css": "cleancss src/css/indexStyle.css -o dist/css/indexStyle.css",
     "build:pages-css": "cleancss src/css/style.css -o dist/css/style.css",
     "build:js": "uglifyjs src/js/*.js --mangle --compress -o dist/js/app.js",
+    "build:minify-images": "imagemin src/images/* --out-dir=dist/images",
     "build:copy-pages": "cp src/index.html dist && cp src/pages/*.html dist/pages"
   },
   "repository": {
@@ -16,6 +17,7 @@
   "author": "Dane Dwarka",
   "devDependencies": {
     "clean-css-cli": "^5.5.2",
+    "imagemin-cli": "^7.0.0",
     "uglify-js": "^3.15.3"
   }
 }
