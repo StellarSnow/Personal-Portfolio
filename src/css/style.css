@@ -83,6 +83,10 @@ form.contact-dane textarea {
   align-self: center;
 }
 
+footer p {
+  text-align: center;
+}
+
 @media only screen and (min-width: 750px) {
   .menu {
     background-color: blue;
