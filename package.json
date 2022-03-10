@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Dane Dwarka Portfolio",
   "scripts": {
-    "build:distDir": "mkdir dist dist\\css dist\\images dist\\js dist\\pages"
+    "build:distDir": "mkdir dist dist\\css dist\\images dist\\js dist\\pages",
+    "build:copy-pages": "cp src/index.html dist && cp src/pages/*.html dist/pages"
   },
   "repository": {
     "type": "git",
