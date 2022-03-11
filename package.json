@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Dane Dwarka Portfolio",
   "scripts": {
-    "build:distDir": "mkdir dist dist/css dist/images dist/js dist/pages",
+    "build:create-dist-dir": "mkdirp dist/css dist/images dist/js dist/pages",
     "build:index-css": "cleancss src/css/indexStyle.css -o dist/css/indexStyle.css",
     "build:pages-css": "cleancss src/css/style.css -o dist/css/style.css",
     "build:js": "uglifyjs src/js/*.js --mangle --compress -o dist/js/app.js",
     "build:minify-images": "imagemin src/images/* --out-dir=dist/images",
     "build:copy-pages": "cp src/index.html dist && cp src/pages/*.html dist/pages",
-    "build:all": "npm run build:distDir && npm run build:index-css && npm run build:pages-css && npm run build:js && npm run build:minify-images && npm run build:copy-pages"
+    "build:all": "npm run build:create-dist-dir && npm run build:index-css && npm run build:pages-css && npm run build:js && npm run build:minify-images && npm run build:copy-pages"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "clean-css-cli": "^5.5.2",
     "imagemin-cli": "^7.0.0",
+    "mkdirp": "^1.0.4",
     "uglify-js": "^3.15.3"
   }
 }
