@@ -1,15 +1,19 @@
 Dane Dwarka Portfolio
 =====================
 
-The main page of my portfolio has:
-* A header with my name
-* A blurb about who I am
-* Four to six buttons.  Each button is a square anchor.  Clicking on it takes you to another page of the website
-* Whenever I get something new I can just add another button
-* A footer with a different quote every time you visit the page.  These are stored in an array
+This is my personal portfolio. I am currently a student in a Software Developer program.
+I hope to make vast improvements to my portfolio as I learn new things.
 
-It will be mobile first. At phone resolution, the buttons will stack on top each other.  At tablet they will be in columns of two.  At desktop they will be two rows of 3.
+The index page now has 4 big buttons taking the user to the rest of the site.
 
-The buttons may be circle-shaped instead of squares.  I want each button to grow when the user mouses over it on desktop.
+Future plans for the index page:
+* Use CSS animation to fly the buttons from the bottom to the top of the screen
+* Resize the buttons to make them look nicer on multiple resolutions
+* Add buttons linking to other pages of this site
 
-
+The rest of the pages have a different format.
+There is an:
+* About Page
+* Blog Page - currently has filler text
+* Contact Page - submit button does not work yet
+* Projects Page - Some assignments I have completed
