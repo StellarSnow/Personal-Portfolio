@@ -7,11 +7,16 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.page-title {
+  text-align: center;
+}
+
+.dark-mode-button {
+  padding: 0.5em;
+}
+
+.hero {
+  text-align: center;
 }
 
 .my-photo {
