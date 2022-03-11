@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dane Dwarka Portfolio",
   "scripts": {
-    "build:distDir": "mkdir dist dist\\css dist\\images dist\\js dist\\pages",
+    "build:distDir": "mkdir dist dist/css dist/images dist/js dist/pages",
     "build:index-css": "cleancss src/css/indexStyle.css -o dist/css/indexStyle.css",
     "build:pages-css": "cleancss src/css/style.css -o dist/css/style.css",
     "build:js": "uglifyjs src/js/*.js --mangle --compress -o dist/js/app.js",
