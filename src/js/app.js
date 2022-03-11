@@ -17,4 +17,13 @@ MemorableQuotes.prototype.provideAQuote = function() {
 
 const quote = new MemorableQuotes();
 
+function toggleLightMode(e) {
+  document.body.classList.toggle('light-mode');
+
+  const button = document.getElementById('light-mode');
+
+  button.textContent === 'Light Mode' ? button.textContent = 'Dark Mode' : button.textContent = 'Light Mode';
+}
+
 document.getElementById('memorable-quote').textContent = quote.provideAQuote();
+document.getElementById('light-mode').addEventListener('click', toggleLightMode);

@@ -7,11 +7,15 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.light-mode {
+  background-color: white;
+}
+
 .page-title {
   text-align: center;
 }
 
-.dark-mode-button {
+.light-mode-button {
   padding: 0.5em;
 }
 
