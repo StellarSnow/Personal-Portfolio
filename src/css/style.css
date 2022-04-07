@@ -60,22 +60,29 @@ h1 {
 }
 
 h2 {
- padding-left: 0.75em;
+ padding-left: 1em;
 }
 
 article img {
   padding-left: 1em;
 }
 
-article ul {
-  padding-left: 4em;
+main ul {
+  padding-left: 5em;
   margin-bottom: 1em;
 }
 
 main p {
-  font-size: 1.2em;
   line-height: 1.25em;
-  padding: 0.25em 1em;
+  padding: 0.25em 1em; 
+  margin-left: 0.5em;
+}
+
+main ol {
+  list-style-type: number;
+  /* margin-left: 5em; */
+  padding-left: 5em;
+  line-height: 1.25em;
 }
 
 article {
