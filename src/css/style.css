@@ -24,7 +24,8 @@ h1 {
 }
 
 .hero {
-  text-align:center
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .my-photo {
@@ -64,6 +65,10 @@ h2, h3, h4, h5 {
  margin-bottom: 0.25em;
 }
 
+h2.blog-title {
+  text-align: center;
+}
+
 article img {
   padding-left: 1em;
 }
@@ -93,6 +98,10 @@ article {
 p.contact-paragraph {
   margin-bottom: 2em;
   text-align: center;
+}
+
+span.publish-date {
+  font-style: italic;
 }
 
 form.contact-dane {
