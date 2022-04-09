@@ -95,6 +95,33 @@ article {
   margin-bottom: 1em;
 }
 
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 1em;
+}
+
+th {
+  width: 20%;
+}
+
+th, td {
+  border: 1px solid black;
+  overflow-wrap: break-word;
+  padding: 10px;
+}
+
+th {
+  background-color: grey;
+}
+
+td {
+  background-color: white;
+}
+
 p.contact-paragraph {
   margin-bottom: 2em;
   text-align: center;
@@ -148,5 +175,13 @@ footer {
 
   form.contact-dane {
     width: 50vw;
+  }
+
+  table {
+    width: 60%;
+  }
+
+  th {
+    width: 15%;
   }
 }
