@@ -127,6 +127,18 @@ td {
   text-align: center;
 }
 
+.about-food {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+figure {
+  width: min-content;
+}
+
 p.contact-paragraph {
   margin-bottom: 2em;
   text-align: center;
