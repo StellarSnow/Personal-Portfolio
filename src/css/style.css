@@ -100,7 +100,7 @@ table {
   table-layout: fixed;
   width: 80%;
   border: 1px solid black;
-  margin-left: 10px;
+  margin-left: 2.5em;
   margin-bottom: 1em;
 }
 
@@ -122,9 +122,14 @@ td {
   background-color: white;
 }
 
-.blog-figure {
-  margin-bottom: 1em;
+figcaption {
+  margin-bottom: 1.5em;
   text-align: center;
+}
+
+.blog-figure-img {
+  display: block;
+  margin-left: 2.5em;
 }
 
 .about-food {
@@ -133,6 +138,10 @@ td {
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
+}
+
+img.food-picture {
+  width: 400px;
 }
 
 figure {
