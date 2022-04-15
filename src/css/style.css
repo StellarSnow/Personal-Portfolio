@@ -141,10 +141,6 @@ h2.blog-title {
   padding-bottom: 1em;
 }
 
-.blog-next-prev:hover {
-  cursor: pointer;
-}
-
 .blog-next-prev a {
   text-decoration: none;
   color: white;
@@ -153,11 +149,13 @@ h2.blog-title {
 .blog-prev {
   text-align: left;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .blog-next {
   text-align: right;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .blog-entry p,
