@@ -127,6 +127,39 @@ h2.blog-title {
   text-align: center;
 }
 
+.blog-next-prev {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: blue;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.blog-next-prev:hover {
+  cursor: pointer;
+}
+
+.blog-next-prev a {
+  text-decoration: none;
+  color: white;
+}
+
+.blog-prev {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.blog-next {
+  text-align: right;
+  margin-right: 20px;
+}
+
 .blog-entry p,
 .blog-entry h2,
 .blog-entry h3,
