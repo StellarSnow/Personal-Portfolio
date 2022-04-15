@@ -72,6 +72,7 @@ article img {
 main ul,
 main ol {
   margin-left: 5em;
+  margin-right: 2.5em;
   margin-bottom: 1em;
 }
 
@@ -120,7 +121,6 @@ td {
 
 figcaption {
   margin-bottom: 1.5em;
-  text-align: center;
 }
 
 h2.blog-title {
@@ -130,6 +130,11 @@ h2.blog-title {
 .blog-figure-img {
   display: block;
   margin-left: 2.5em;
+}
+
+.blog-img{
+  width: 80%;
+  height: auto;
 }
 
 .blog-main {
@@ -202,12 +207,8 @@ h2.blog-title {
   justify-content: space-evenly;
 }
 
-img.food-picture {
-  width: 400px;
-}
-
-figure {
-  width: min-content;
+.food-picture {
+  width: 340px;
 }
 
 p.contact-paragraph {
@@ -249,6 +250,11 @@ form.contact-dane textarea {
 footer {
   margin: 1.25em auto;
   text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+  .food-picture {
+    width: 400px;
 }
 
 @media only screen and (min-width: 750px) {
