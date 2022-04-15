@@ -97,7 +97,7 @@ table {
   table-layout: fixed;
   width: 80%;
   border: 1px solid black;
-  margin-left: 2.5em;
+  margin-left: 20px;
   margin-bottom: 1em;
 }
 
@@ -127,9 +127,18 @@ h2.blog-title {
   text-align: center;
 }
 
+.blog-entry p,
+.blog-entry h2,
+.blog-entry h3,
+.blog-entry h4,
+.blog-entry h5,
+.blog-figure-img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .blog-figure-img {
   display: block;
-  margin-left: 2.5em;
 }
 
 .blog-img{
@@ -233,6 +242,13 @@ form.contact-dane textarea {
 footer {
   margin: 1.25em auto;
   text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+  .about-entry p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (min-width: 450px) {
