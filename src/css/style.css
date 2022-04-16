@@ -146,6 +146,11 @@ h2.blog-title {
   color: white;
 }
 
+.blog-next-prev a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 .blog-prev {
   text-align: left;
   margin-left: 20px;
