@@ -244,8 +244,10 @@ h2.blog-title {
 }
 
 p.contact-paragraph {
-  margin-bottom: 2em;
-  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin: auto;
+  width: 90vw;
 }
 
 span.publish-date {
@@ -327,7 +329,8 @@ footer {
     list-style-type: none;
   }
 
-  form.contact-dane {
+  form.contact-dane,
+  p.contact-paragraph {
     width: 50vw;
   }
 
