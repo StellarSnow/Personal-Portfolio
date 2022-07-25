@@ -14,6 +14,6 @@ Future plans for the index page:
 The rest of the pages have a different format.
 There is an:
 * About Page
-* Blog Page
+* Blog Page - four blog entries
 * Contact Page - submit button does not work yet
 * Projects Page - Some assignments I have completed
