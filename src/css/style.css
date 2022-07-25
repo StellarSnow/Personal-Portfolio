@@ -24,7 +24,8 @@ h1 {
 }
 
 .hero {
-  text-align:center
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .my-photo {
@@ -59,23 +60,31 @@ h1 {
   text-decoration: underline;
 }
 
-h2 {
- padding-left: 0.75em;
+h2, h3, h4, h5 {
+ margin-left: 10px;
+ margin-bottom: 0.25em;
 }
 
 article img {
   padding-left: 1em;
 }
 
-article ul {
-  padding-left: 4em;
+main ul,
+main ol {
+  margin-left: 5em;
+  margin-right: 2.5em;
   margin-bottom: 1em;
 }
 
 main p {
-  font-size: 1.2em;
   line-height: 1.25em;
-  padding: 0.25em 1em;
+  margin-bottom: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main ol {
+  list-style-type: number;
 }
 
 article {
@@ -83,9 +92,166 @@ article {
   margin-bottom: 1em;
 }
 
-p.contact-paragraph {
-  margin-bottom: 2em;
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+th {
+  width: 20%;
+}
+
+th, td {
+  border: 1px solid black;
+  overflow-wrap: break-word;
+  padding: 10px;
+}
+
+th {
+  background-color: grey;
+}
+
+td {
+  background-color: white;
+}
+
+figcaption {
+  margin-bottom: 1.5em;
+}
+
+h2.blog-title {
   text-align: center;
+}
+
+.blog-next-prev {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: blue;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.blog-next-prev a {
+  text-decoration: none;
+  color: white;
+}
+
+.blog-next-prev a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.blog-prev {
+  text-align: left;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.blog-next {
+  text-align: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.blog-entry p,
+.blog-entry h2,
+.blog-entry h3,
+.blog-entry h4,
+.blog-entry h5,
+.blog-figure-img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.blog-figure-img {
+  display: block;
+}
+
+.blog-img{
+  width: 80%;
+  height: auto;
+}
+
+.blog-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.blog-card {
+  background-color: blue;
+  color: white;
+  width: 310px;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-card-image {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 0.75em;
+  width: 300px;
+  height: 175px;
+}
+
+.blog-card-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blog-card-title,
+.blog-card-body,
+.blog-card-date {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.blog-card-body {
+  line-height: 1.5em;
+}
+
+.blog-card-date {
+  font-style: italic;
+}
+
+.about-food {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.food-picture {
+  width: 340px;
+}
+
+p.contact-paragraph {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin: auto;
+  width: 90vw;
+}
+
+span.publish-date {
+  font-style: italic;
 }
 
 form.contact-dane {
@@ -120,6 +286,39 @@ footer {
   text-align: center;
 }
 
+@media only screen and (min-width: 400px) {
+  .about-entry p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .food-picture {
+    width: 400px;
+  }
+
+  .blog-card {
+    height: 425px;
+    position: relative;
+  }
+
+  .blog-card-top {
+    position: absolute;
+    top: 0px;
+  }
+  
+  .blog-card-middle {
+    position: absolute;
+    top: 275px;
+  }
+  
+  .blog-card-bottom {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
 @media only screen and (min-width: 750px) {
   .menu {
     background-color: blue;
@@ -130,7 +329,16 @@ footer {
     list-style-type: none;
   }
 
-  form.contact-dane {
+  form.contact-dane,
+  p.contact-paragraph {
     width: 50vw;
+  }
+
+  table {
+    width: 60%;
+  }
+
+  th {
+    width: 15%;
   }
 }
