@@ -4,19 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/indexStyle.css">
+  <title>About Me</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Dane Dwarka's Portfolio</h1>
+    <h1>Dane Dwarka</h1>
+    <ul class="menu">
+      <li><a href="pages/projects.html">Projects</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="pages/contact.html">Contact Me</a></li>
+      <li><a href="pages/blog.html">Blog</a></li>
+    </ul>
   </header>
-  <main>
+  <div class="hero">
+    <img class="my-photo" src="images/ProfessionalProfilePhoto.jpg" alt="Dane Dwarka">
+  </div>
+  <main class="about-entry">
     <section>
-      <p>This website is undergoing some changes while I move it to a new host. The links to Brarchitects and Mittflix do not work.</p>
-      <p>Find out more <a href="pages/about.html">about me.</a></p>
+      <p>My name is Dane Dwarka.  I was born in Trinidad, lived in Ottawa for a few years, and then moved to Winnipeg.  I have lived in Winnipeg for most of my life.</p>
+      <p>I graduated from Red River College (now called Red River College Polytechnic) in 2005 with honours from the Computer Analyst/Programmer Diploma program.  I worked as a computer programmer for several years.  I graduated from Manitoba Institute of Trades and Technology's Software Developer program in 2022.</p>
+      <p>I am currently the Streaming Facilitator at the United Church in Meadowood. I live stream Sunday services on YouTube. I am responsible for co-ordinating the cameras and the audio. We use <a href="https://www.switcherstudio.com/" target="_blank">Switcher Studio</a>. Feel free to watch our <a href="https://www.youtube.com/@unitedchurchinmeadowood5298/streams" target="_blank">live streams.</a></p>
+      <p>I like to play chess.  I have a membership at chess.com which is an online chess community.</p>
+      <p>I also do some cooking.  My ethnic background is West Indian and I’ve been trying to learn that cuisine.</p>
+      <p>Here are three of the dishes I can cook:</p>
     </section>
-  </main>
-  <footer></footer>
+
+    <section class="about-food">
+      <figure>
+        <img class="food-picture" src="images/bean-choka.jpg" alt="bean choka">
+        <figcaption class="food-picture">Bean choka: long green beans, potatoes, tomatoes, and spices</figcaption>
+      </figure>
+      <figure>
+        <img class="food-picture" src="images/curry-chicken.jpg" alt="curry chicken">
+        <figcaption class="food-picture">Curry chicken</figcaption>
+      </figure>
+      <figure>
+        <img class="food-picture" src="images/tomato-choka.jpg" alt="tomato choka">
+        <figcaption class="food-picture">Tomato choka: tomatoes, onions, and spices</figcaption>
+      </figure>
+    </section>
+  </main> 
+  <footer>
+    <p id="memorable-quote"></p>
+  </footer>
 </body>
 </html>
